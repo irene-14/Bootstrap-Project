@@ -1,7 +1,72 @@
-.main-container {
-    background-color: rgba(228, 209, 209, 0.918);
+.ocean-container {
+    background: url(/img/ocean.jfif) no-repeat fixed center;
+    background-size: cover;
 }
 
-h1 {
+.title-container {
+    width: 85%;
+    font-size: 5em;
+    padding: 1em;
+    justify-content: center;
+}
+
+.input {
+    padding: 2em;
+    justify-content: center;
+}
+
+.gray-container {
+    background-color: rgb(245, 245, 245);
+}
+
+h1, h2 {
     color: rgb(255, 255, 255);
 }
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    padding: 1em;
+}
+
+a {
+    padding: 0.5em;
+}
+
+.monitor {
+    content: url(/icons/monitor.svg) ;
+}
+
+.layers {
+    content: url(/icons/layers.svg) ;
+}
+
+.check {
+    content: url(/icons/check.svg) ;
+}
+
+.facebook {
+    content: url(/icons/facebook.svg) ;
+}
+
+.twitter {
+    content: url(/icons/twitter.svg) ;
+}
+
+.instagram {
+    content: url(/icons/instagram.svg) ;
+}
+
+.iphone-container {
+    background: url(/img/iphone.png);
+}
+
+.code-container {
+    background: url(/img/code.jpg);
+}
+
+.kid-container {
+    background: url(/img/kid.jpg);
+}
+
