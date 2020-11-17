@@ -7,13 +7,6 @@
     align-items: center;
 }
 
-.title-container {
-    width: 55%;
-    font-size: 5em;
-    padding-top: 1em;
-    justify-content: center;
-}
-
 .input {
     padding: 2em;
     justify-content: center;
@@ -29,38 +22,12 @@
     padding: 0.5em;
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.col-6 {
-    padding: 0;
-}
-
 .text-centered {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
 }
-
-.text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding: 3em;
-}
-
-.rrss {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .footer {
     display: flex;
     flex-direction: column;
@@ -89,13 +56,6 @@ h1, h2 {
 
 p.centered {
     text-align: center;
-}
-
-img.circular {
-    width: 150px;
-    height: 150px;
-    border-radius: 150px;
-    padding: 1em;
 }
 
 img {
@@ -134,3 +94,93 @@ span {
 .instagram {
     content: url(/icons/instagram.svg);
 }
+
+
+/**************************   RESPONSIVE   ***************************/
+
+@media (min-width: 0) {
+    
+    div.title-container {
+        width: 90%;
+        font-size: 5em;
+        padding-top: 1em;
+        justify-content: center;
+    }
+
+    div.col-xs-12 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+    }
+
+    h1 {
+        font-size: 0.35em;
+    }
+
+    img.circular {
+        width: 200px;
+        height: 200px;
+        border-radius: 150px;
+        padding: 1em;
+    }
+
+    div.col-xs-12-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width: 992px) {
+    
+    div.title-container {
+        width: 55%;
+        font-size: 5em;
+        padding-top: 1em;
+        justify-content: center;
+    }
+
+    div.col-md-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+    }
+
+    div.col-md-5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    div.col-md-6 {
+        display: inline;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    div.text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 3em;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    img.circular {
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+        padding: 1em;
+    }
+}
+
