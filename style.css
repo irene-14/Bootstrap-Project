@@ -54,8 +54,20 @@ h1, h2 {
     color: rgb(255, 255, 255);
 }
 
+h4, h5, h6 {
+    font-weight: bold;
+}
+
 p.centered {
     text-align: center;
+}
+
+p.justified {
+    text-align: justify;
+}
+
+p.smaller {
+    font-size: 0.85rem;
 }
 
 img {
@@ -99,6 +111,12 @@ span {
 /**************************   RESPONSIVE   ***************************/
 
 @media (min-width: 0) {
+
+    div.start-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 0.5em;
+    }
     
     div.title-container {
         width: 90%;
@@ -112,11 +130,24 @@ span {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 1em;
+        padding: 1.5em;
+    }
+
+    div.row-reverse {
+        display: flex;
+        flex-direction: initial;
     }
 
     h1 {
-        font-size: 0.35em;
+        font-size: 0.38em;
+    }
+
+    h5 {
+        font-size: 2.25rem;
+    }
+
+    p {
+        margin: 0;
     }
 
     img.circular {
@@ -130,6 +161,25 @@ span {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .form-inline .form-control {
+        display: inline-block;
+        width: 20rem;
+        height: 2.4rem;
+        vertical-align: middle;
+    }
+
+    form.form-inline {
+        justify-content: center;
+    }
+
+    .btn {
+        width: 20rem;
+    }
+
+    .btn-sm {
+        width: 4rem;
     }
 }
 @media (min-width: 992px) {
@@ -172,8 +222,17 @@ span {
         padding: 3em;
     }
 
+    div.row-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
     }
 
     img.circular {
@@ -181,6 +240,21 @@ span {
         height: 150px;
         border-radius: 150px;
         padding: 1em;
+    }
+
+    .form-inline .form-control {
+        display: inline-block;
+        width: 20rem;
+        height: 2.4rem;
+        vertical-align: middle;
+    }
+
+    .btn {
+        width: auto;
+    }
+
+    .btn-sm {
+        width: 4rem;
     }
 }
 
